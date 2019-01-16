@@ -1,0 +1,960 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		334199B421EF539500054DF8 /* WidgetTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334199B321EF539500054DF8 /* WidgetTableViewCell.swift */; };
+		334199BC21EF603E00054DF8 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 334199BA21EF603E00054DF8 /* Interface.storyboard */; };
+		334199BE21EF604000054DF8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 334199BD21EF604000054DF8 /* Assets.xcassets */; };
+		334199C521EF604000054DF8 /* Watch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 334199C421EF604000054DF8 /* Watch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		334199CC21EF604000054DF8 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334199CB21EF604000054DF8 /* ExtensionDelegate.swift */; };
+		334199CE21EF604100054DF8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 334199CD21EF604100054DF8 /* Assets.xcassets */; };
+		334199D221EF604100054DF8 /* Watch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 334199B821EF603E00054DF8 /* Watch.app */; };
+		334199DC21EF704B00054DF8 /* AccountsInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334199DB21EF704B00054DF8 /* AccountsInterfaceController.swift */; };
+		334199E621EF7BCA00054DF8 /* AccountRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334199E521EF7BCA00054DF8 /* AccountRowController.swift */; };
+		33419A3D21EF83D900054DF8 /* AccountListAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33419A3A21EF83AE00054DF8 /* AccountListAPI.framework */; };
+		33419A3E21EF83E500054DF8 /* AccountListAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33419A3A21EF83AE00054DF8 /* AccountListAPI.framework */; };
+		33419A3F21EF83E500054DF8 /* AccountListAPI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 33419A3A21EF83AE00054DF8 /* AccountListAPI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		33419A4221EF83ED00054DF8 /* AccountListAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33419A3C21EF83AE00054DF8 /* AccountListAPI.framework */; };
+		33419A4321EF83ED00054DF8 /* AccountListAPI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 33419A3C21EF83AE00054DF8 /* AccountListAPI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		33435FC121EDFCCF00740DD1 /* AccountListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33435FC021EDFCCF00740DD1 /* AccountListViewController.swift */; };
+		33A43AC521EDE72F0073AD5B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A43AC421EDE72F0073AD5B /* AppDelegate.swift */; };
+		33A43ACC21EDE72F0073AD5B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33A43ACB21EDE72F0073AD5B /* Assets.xcassets */; };
+		33A43ADE21EDF0970073AD5B /* AccountListView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33A43ADD21EDF0970073AD5B /* AccountListView.xib */; };
+		33A43AE021EDF0E20073AD5B /* UIXibView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A43ADF21EDF0E20073AD5B /* UIXibView.swift */; };
+		33A43AE221EDF1380073AD5B /* AccountListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A43AE121EDF1380073AD5B /* AccountListView.swift */; };
+		33A43AE421EDF1D20073AD5B /* CustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33A43AE321EDF1D20073AD5B /* CustomTableViewCell.xib */; };
+		33A43AE621EDF2EB0073AD5B /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A43AE521EDF2EB0073AD5B /* CustomTableViewCell.swift */; };
+		33CE174B21EEA22800CD648C /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33CE174A21EEA22800CD648C /* NotificationCenter.framework */; };
+		33CE174E21EEA22800CD648C /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33CE174D21EEA22800CD648C /* TodayViewController.swift */; };
+		33CE175121EEA22800CD648C /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33CE174F21EEA22800CD648C /* MainInterface.storyboard */; };
+		33CE175521EEA22800CD648C /* Accounts Widget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 33CE174921EEA22800CD648C /* Accounts Widget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		33CE17BA21EEC81B00CD648C /* AccountListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33CE17B921EEC81B00CD648C /* AccountListViewController.xib */; };
+		7A07ECFB1AD2E42CB5DCFE9E /* Pods_VisibleAccounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 223F1DD9BC5129221EEA0E89 /* Pods_VisibleAccounts.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		334199C621EF604000054DF8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 33A43AB921EDE72F0073AD5B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 334199C321EF604000054DF8;
+			remoteInfo = "Watch Extension";
+		};
+		334199D021EF604100054DF8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 33A43AB921EDE72F0073AD5B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 334199B721EF603E00054DF8;
+			remoteInfo = Watch;
+		};
+		33419A3921EF83AE00054DF8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 33419A3421EF83AE00054DF8 /* AccountListAPI.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 334199F321EF7E9A00054DF8;
+			remoteInfo = iOSAccountListAPI;
+		};
+		33419A3B21EF83AE00054DF8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 33419A3421EF83AE00054DF8 /* AccountListAPI.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 33419A0121EF7EBC00054DF8;
+			remoteInfo = watchOSAccountListAPI;
+		};
+		33419A4021EF83E500054DF8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 33419A3421EF83AE00054DF8 /* AccountListAPI.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 334199F221EF7E9A00054DF8;
+			remoteInfo = iOSAccountListAPI;
+		};
+		33419A4421EF83ED00054DF8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 33419A3421EF83AE00054DF8 /* AccountListAPI.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 33419A0021EF7EBC00054DF8;
+			remoteInfo = watchOSAccountListAPI;
+		};
+		33CE175321EEA22800CD648C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 33A43AB921EDE72F0073AD5B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 33CE174821EEA22800CD648C;
+			remoteInfo = "Accounts Widget";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		334199D821EF604100054DF8 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				334199C521EF604000054DF8 /* Watch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		334199DA21EF604100054DF8 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				334199D221EF604100054DF8 /* Watch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		334199E121EF754F00054DF8 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				33419A4321EF83ED00054DF8 /* AccountListAPI.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33CE175921EEA22800CD648C /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				33CE175521EEA22800CD648C /* Accounts Widget.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33CE17B821EEC80000CD648C /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				33419A3F21EF83E500054DF8 /* AccountListAPI.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		223F1DD9BC5129221EEA0E89 /* Pods_VisibleAccounts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VisibleAccounts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		334199B321EF539500054DF8 /* WidgetTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WidgetTableViewCell.swift; sourceTree = "<group>"; };
+		334199B821EF603E00054DF8 /* Watch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Watch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		334199BB21EF603E00054DF8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		334199BD21EF604000054DF8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		334199BF21EF604000054DF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		334199C421EF604000054DF8 /* Watch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Watch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		334199CB21EF604000054DF8 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		334199CD21EF604100054DF8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		334199CF21EF604100054DF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		334199DB21EF704B00054DF8 /* AccountsInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsInterfaceController.swift; sourceTree = "<group>"; };
+		334199E521EF7BCA00054DF8 /* AccountRowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountRowController.swift; sourceTree = "<group>"; };
+		33419A3421EF83AE00054DF8 /* AccountListAPI.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = AccountListAPI.xcodeproj; path = ../AccountListAPI/AccountListAPI.xcodeproj; sourceTree = "<group>"; };
+		33435FC021EDFCCF00740DD1 /* AccountListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountListViewController.swift; sourceTree = "<group>"; };
+		33A43AC121EDE72F0073AD5B /* VisibleAccounts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VisibleAccounts.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		33A43AC421EDE72F0073AD5B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		33A43ACB21EDE72F0073AD5B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		33A43AD021EDE72F0073AD5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		33A43ADD21EDF0970073AD5B /* AccountListView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AccountListView.xib; sourceTree = "<group>"; };
+		33A43ADF21EDF0E20073AD5B /* UIXibView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIXibView.swift; sourceTree = "<group>"; };
+		33A43AE121EDF1380073AD5B /* AccountListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountListView.swift; sourceTree = "<group>"; };
+		33A43AE321EDF1D20073AD5B /* CustomTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTableViewCell.xib; sourceTree = "<group>"; };
+		33A43AE521EDF2EB0073AD5B /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		33CE174921EEA22800CD648C /* Accounts Widget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Accounts Widget.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		33CE174A21EEA22800CD648C /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		33CE174D21EEA22800CD648C /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		33CE175021EEA22800CD648C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		33CE175221EEA22800CD648C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		33CE17B921EEC81B00CD648C /* AccountListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AccountListViewController.xib; sourceTree = "<group>"; };
+		87700471916B828C8A222157 /* Pods-VisibleAccounts.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VisibleAccounts.release.xcconfig"; path = "Pods/Target Support Files/Pods-VisibleAccounts/Pods-VisibleAccounts.release.xcconfig"; sourceTree = "<group>"; };
+		F14BD20BFA027BB473594BED /* Pods-VisibleAccounts.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VisibleAccounts.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VisibleAccounts/Pods-VisibleAccounts.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		334199C121EF604000054DF8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33419A4221EF83ED00054DF8 /* AccountListAPI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33A43ABE21EDE72F0073AD5B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A07ECFB1AD2E42CB5DCFE9E /* Pods_VisibleAccounts.framework in Frameworks */,
+				33419A3E21EF83E500054DF8 /* AccountListAPI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33CE174621EEA22800CD648C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33419A3D21EF83D900054DF8 /* AccountListAPI.framework in Frameworks */,
+				33CE174B21EEA22800CD648C /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		334199B921EF603E00054DF8 /* Watch */ = {
+			isa = PBXGroup;
+			children = (
+				334199BA21EF603E00054DF8 /* Interface.storyboard */,
+				334199BD21EF604000054DF8 /* Assets.xcassets */,
+				334199BF21EF604000054DF8 /* Info.plist */,
+			);
+			path = Watch;
+			sourceTree = "<group>";
+		};
+		334199C821EF604000054DF8 /* Watch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				334199CB21EF604000054DF8 /* ExtensionDelegate.swift */,
+				334199DB21EF704B00054DF8 /* AccountsInterfaceController.swift */,
+				334199E521EF7BCA00054DF8 /* AccountRowController.swift */,
+				334199CD21EF604100054DF8 /* Assets.xcassets */,
+				334199CF21EF604100054DF8 /* Info.plist */,
+			);
+			path = "Watch Extension";
+			sourceTree = "<group>";
+		};
+		33419A3521EF83AE00054DF8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				33419A3A21EF83AE00054DF8 /* AccountListAPI.framework */,
+				33419A3C21EF83AE00054DF8 /* AccountListAPI.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		33A43AB821EDE72F0073AD5B = {
+			isa = PBXGroup;
+			children = (
+				33A43AC321EDE72F0073AD5B /* VisibleAccounts */,
+				33CE174C21EEA22800CD648C /* Accounts Widget */,
+				334199B921EF603E00054DF8 /* Watch */,
+				334199C821EF604000054DF8 /* Watch Extension */,
+				33419A3421EF83AE00054DF8 /* AccountListAPI.xcodeproj */,
+				33A43AC221EDE72F0073AD5B /* Products */,
+				E369CCF2110FF7C98EF49ACA /* Pods */,
+				A0860EAA382232EE951AF430 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		33A43AC221EDE72F0073AD5B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				33A43AC121EDE72F0073AD5B /* VisibleAccounts.app */,
+				33CE174921EEA22800CD648C /* Accounts Widget.appex */,
+				334199B821EF603E00054DF8 /* Watch.app */,
+				334199C421EF604000054DF8 /* Watch Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		33A43AC321EDE72F0073AD5B /* VisibleAccounts */ = {
+			isa = PBXGroup;
+			children = (
+				33A43AC421EDE72F0073AD5B /* AppDelegate.swift */,
+				33A43ADC21EDEF120073AD5B /* Views */,
+				33A43ADB21EDEF020073AD5B /* Controllers */,
+				33A43ACB21EDE72F0073AD5B /* Assets.xcassets */,
+				33A43AD021EDE72F0073AD5B /* Info.plist */,
+			);
+			path = VisibleAccounts;
+			sourceTree = "<group>";
+		};
+		33A43ADB21EDEF020073AD5B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				33CE17B921EEC81B00CD648C /* AccountListViewController.xib */,
+				33435FC021EDFCCF00740DD1 /* AccountListViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		33A43ADC21EDEF120073AD5B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				33A43ADF21EDF0E20073AD5B /* UIXibView.swift */,
+				33A43ADD21EDF0970073AD5B /* AccountListView.xib */,
+				33A43AE121EDF1380073AD5B /* AccountListView.swift */,
+				33A43AE321EDF1D20073AD5B /* CustomTableViewCell.xib */,
+				33A43AE521EDF2EB0073AD5B /* CustomTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		33CE174C21EEA22800CD648C /* Accounts Widget */ = {
+			isa = PBXGroup;
+			children = (
+				334199B321EF539500054DF8 /* WidgetTableViewCell.swift */,
+				33CE174D21EEA22800CD648C /* TodayViewController.swift */,
+				33CE174F21EEA22800CD648C /* MainInterface.storyboard */,
+				33CE175221EEA22800CD648C /* Info.plist */,
+			);
+			path = "Accounts Widget";
+			sourceTree = "<group>";
+		};
+		A0860EAA382232EE951AF430 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				223F1DD9BC5129221EEA0E89 /* Pods_VisibleAccounts.framework */,
+				33CE174A21EEA22800CD648C /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E369CCF2110FF7C98EF49ACA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F14BD20BFA027BB473594BED /* Pods-VisibleAccounts.debug.xcconfig */,
+				87700471916B828C8A222157 /* Pods-VisibleAccounts.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		334199B721EF603E00054DF8 /* Watch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 334199D921EF604100054DF8 /* Build configuration list for PBXNativeTarget "Watch" */;
+			buildPhases = (
+				334199B621EF603E00054DF8 /* Resources */,
+				334199D821EF604100054DF8 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				334199C721EF604000054DF8 /* PBXTargetDependency */,
+			);
+			name = Watch;
+			productName = Watch;
+			productReference = 334199B821EF603E00054DF8 /* Watch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		334199C321EF604000054DF8 /* Watch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 334199D721EF604100054DF8 /* Build configuration list for PBXNativeTarget "Watch Extension" */;
+			buildPhases = (
+				334199C021EF604000054DF8 /* Sources */,
+				334199C121EF604000054DF8 /* Frameworks */,
+				334199C221EF604000054DF8 /* Resources */,
+				334199E121EF754F00054DF8 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				33419A4521EF83ED00054DF8 /* PBXTargetDependency */,
+			);
+			name = "Watch Extension";
+			productName = "Watch Extension";
+			productReference = 334199C421EF604000054DF8 /* Watch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+		33A43AC021EDE72F0073AD5B /* VisibleAccounts */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 33A43AD321EDE72F0073AD5B /* Build configuration list for PBXNativeTarget "VisibleAccounts" */;
+			buildPhases = (
+				132F8418FFD399168DD04D9C /* [CP] Check Pods Manifest.lock */,
+				33A43ABD21EDE72F0073AD5B /* Sources */,
+				33A43ABE21EDE72F0073AD5B /* Frameworks */,
+				33A43ABF21EDE72F0073AD5B /* Resources */,
+				CABDDE01F126B7F3DF17444F /* [CP] Embed Pods Frameworks */,
+				33CE175921EEA22800CD648C /* Embed App Extensions */,
+				33CE17B821EEC80000CD648C /* Embed Frameworks */,
+				334199DA21EF604100054DF8 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				33CE175421EEA22800CD648C /* PBXTargetDependency */,
+				334199D121EF604100054DF8 /* PBXTargetDependency */,
+				33419A4121EF83E500054DF8 /* PBXTargetDependency */,
+			);
+			name = VisibleAccounts;
+			productName = VisibleAccounts;
+			productReference = 33A43AC121EDE72F0073AD5B /* VisibleAccounts.app */;
+			productType = "com.apple.product-type.application";
+		};
+		33CE174821EEA22800CD648C /* Accounts Widget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 33CE175821EEA22800CD648C /* Build configuration list for PBXNativeTarget "Accounts Widget" */;
+			buildPhases = (
+				33CE174521EEA22800CD648C /* Sources */,
+				33CE174621EEA22800CD648C /* Frameworks */,
+				33CE174721EEA22800CD648C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Accounts Widget";
+			productName = "Accounts Widget";
+			productReference = 33CE174921EEA22800CD648C /* Accounts Widget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		33A43AB921EDE72F0073AD5B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Daniel Morato";
+				TargetAttributes = {
+					334199B721EF603E00054DF8 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					334199C321EF604000054DF8 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					33A43AC021EDE72F0073AD5B = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					33CE174821EEA22800CD648C = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 33A43ABC21EDE72F0073AD5B /* Build configuration list for PBXProject "VisibleAccounts" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 33A43AB821EDE72F0073AD5B;
+			productRefGroup = 33A43AC221EDE72F0073AD5B /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 33419A3521EF83AE00054DF8 /* Products */;
+					ProjectRef = 33419A3421EF83AE00054DF8 /* AccountListAPI.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				33CE174821EEA22800CD648C /* Accounts Widget */,
+				33A43AC021EDE72F0073AD5B /* VisibleAccounts */,
+				334199B721EF603E00054DF8 /* Watch */,
+				334199C321EF604000054DF8 /* Watch Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		33419A3A21EF83AE00054DF8 /* AccountListAPI.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = AccountListAPI.framework;
+			remoteRef = 33419A3921EF83AE00054DF8 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		33419A3C21EF83AE00054DF8 /* AccountListAPI.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = AccountListAPI.framework;
+			remoteRef = 33419A3B21EF83AE00054DF8 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		334199B621EF603E00054DF8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				334199BE21EF604000054DF8 /* Assets.xcassets in Resources */,
+				334199BC21EF603E00054DF8 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		334199C221EF604000054DF8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				334199CE21EF604100054DF8 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33A43ABF21EDE72F0073AD5B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33A43ADE21EDF0970073AD5B /* AccountListView.xib in Resources */,
+				33A43ACC21EDE72F0073AD5B /* Assets.xcassets in Resources */,
+				33CE17BA21EEC81B00CD648C /* AccountListViewController.xib in Resources */,
+				33A43AE421EDF1D20073AD5B /* CustomTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33CE174721EEA22800CD648C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33CE175121EEA22800CD648C /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		132F8418FFD399168DD04D9C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VisibleAccounts-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CABDDE01F126B7F3DF17444F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-VisibleAccounts/Pods-VisibleAccounts-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VisibleAccounts/Pods-VisibleAccounts-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		334199C021EF604000054DF8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				334199CC21EF604000054DF8 /* ExtensionDelegate.swift in Sources */,
+				334199E621EF7BCA00054DF8 /* AccountRowController.swift in Sources */,
+				334199DC21EF704B00054DF8 /* AccountsInterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33A43ABD21EDE72F0073AD5B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33A43AE221EDF1380073AD5B /* AccountListView.swift in Sources */,
+				33435FC121EDFCCF00740DD1 /* AccountListViewController.swift in Sources */,
+				33A43AE621EDF2EB0073AD5B /* CustomTableViewCell.swift in Sources */,
+				33A43AC521EDE72F0073AD5B /* AppDelegate.swift in Sources */,
+				33A43AE021EDF0E20073AD5B /* UIXibView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33CE174521EEA22800CD648C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33CE174E21EEA22800CD648C /* TodayViewController.swift in Sources */,
+				334199B421EF539500054DF8 /* WidgetTableViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		334199C721EF604000054DF8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 334199C321EF604000054DF8 /* Watch Extension */;
+			targetProxy = 334199C621EF604000054DF8 /* PBXContainerItemProxy */;
+		};
+		334199D121EF604100054DF8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 334199B721EF603E00054DF8 /* Watch */;
+			targetProxy = 334199D021EF604100054DF8 /* PBXContainerItemProxy */;
+		};
+		33419A4121EF83E500054DF8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = iOSAccountListAPI;
+			targetProxy = 33419A4021EF83E500054DF8 /* PBXContainerItemProxy */;
+		};
+		33419A4521EF83ED00054DF8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = watchOSAccountListAPI;
+			targetProxy = 33419A4421EF83ED00054DF8 /* PBXContainerItemProxy */;
+		};
+		33CE175421EEA22800CD648C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 33CE174821EEA22800CD648C /* Accounts Widget */;
+			targetProxy = 33CE175321EEA22800CD648C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		334199BA21EF603E00054DF8 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				334199BB21EF603E00054DF8 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+		33CE174F21EEA22800CD648C /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				33CE175021EEA22800CD648C /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		334199D321EF604100054DF8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				IBSC_MODULE = Watch_Extension;
+				INFOPLIST_FILE = Watch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = es.dani.VisibleAccounts.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Debug;
+		};
+		334199D421EF604100054DF8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				IBSC_MODULE = Watch_Extension;
+				INFOPLIST_FILE = Watch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = es.dani.VisibleAccounts.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Release;
+		};
+		334199D521EF604100054DF8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Watch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = es.dani.VisibleAccounts.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Debug;
+		};
+		334199D621EF604100054DF8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Watch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = es.dani.VisibleAccounts.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Release;
+		};
+		33A43AD121EDE72F0073AD5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		33A43AD221EDE72F0073AD5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		33A43AD421EDE72F0073AD5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F14BD20BFA027BB473594BED /* Pods-VisibleAccounts.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = VisibleAccounts/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = es.dani.VisibleAccounts;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		33A43AD521EDE72F0073AD5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 87700471916B828C8A222157 /* Pods-VisibleAccounts.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = VisibleAccounts/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = es.dani.VisibleAccounts;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		33CE175621EEA22800CD648C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Accounts Widget/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "es.dani.VisibleAccounts.Accounts-Widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		33CE175721EEA22800CD648C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Accounts Widget/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "es.dani.VisibleAccounts.Accounts-Widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		334199D721EF604100054DF8 /* Build configuration list for PBXNativeTarget "Watch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				334199D521EF604100054DF8 /* Debug */,
+				334199D621EF604100054DF8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		334199D921EF604100054DF8 /* Build configuration list for PBXNativeTarget "Watch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				334199D321EF604100054DF8 /* Debug */,
+				334199D421EF604100054DF8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		33A43ABC21EDE72F0073AD5B /* Build configuration list for PBXProject "VisibleAccounts" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33A43AD121EDE72F0073AD5B /* Debug */,
+				33A43AD221EDE72F0073AD5B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		33A43AD321EDE72F0073AD5B /* Build configuration list for PBXNativeTarget "VisibleAccounts" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33A43AD421EDE72F0073AD5B /* Debug */,
+				33A43AD521EDE72F0073AD5B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		33CE175821EEA22800CD648C /* Build configuration list for PBXNativeTarget "Accounts Widget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33CE175621EEA22800CD648C /* Debug */,
+				33CE175721EEA22800CD648C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 33A43AB921EDE72F0073AD5B /* Project object */;
+}

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14460.31" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ZXB-Bn-SqP">
+    <device id="watch42" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14460.16"/>
+    </dependencies>
+    <scenes>
+        <!--Accounts-->
+        <scene sceneID="xOU-Jp-TKx">
+            <objects>
+                <controller identifier="Accounts" hidesWhenLoading="NO" id="ZXB-Bn-SqP" customClass="AccountsInterfaceController" customModule="Watch_Extension">
+                    <items>
+                        <table alignment="left" id="UPM-Se-fQz">
+                            <items>
+                                <tableRow identifier="AccountCustomRow" id="brQ-Oj-SUK" customClass="AccountRowController" customModule="Watch_Extension">
+                                    <group key="rootItem" width="1" height="0.0" alignment="left" layout="vertical" spacing="6" id="i7G-HX-ucF">
+                                        <items>
+                                            <group width="1" alignment="left" id="ZjL-JD-g0E">
+                                                <items>
+                                                    <label alignment="left" verticalAlignment="center" text="Account" textAlignment="left" id="UDa-5b-FDh"/>
+                                                    <label alignment="right" verticalAlignment="center" text="balance" textAlignment="right" id="Q4d-KF-esK"/>
+                                                </items>
+                                            </group>
+                                            <label alignment="left" text="iban" id="iYd-i3-2Ll"/>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="accountName" destination="UDa-5b-FDh" id="tPo-uL-27J"/>
+                                        <outlet property="balance" destination="Q4d-KF-esK" id="iLf-46-6Bi"/>
+                                        <outlet property="iban" destination="iYd-i3-2Ll" id="lTa-ru-kVu"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="table" destination="UPM-Se-fQz" id="FP9-oM-g23"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="22" y="-46"/>
+        </scene>
+    </scenes>
+</document>

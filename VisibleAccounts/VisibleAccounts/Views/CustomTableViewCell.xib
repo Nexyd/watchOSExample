@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CustomTableViewCell" customModule="VisibleAccounts" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CustomTableViewCell" rowHeight="89" id="xHJ-1u-Kd4" customClass="CustomTableViewCell" customModule="VisibleAccounts" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="89"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="xHJ-1u-Kd4" id="a01-CT-euG">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="88.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Account name" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zpR-bR-veM">
+                        <rect key="frame" x="16" y="11" width="110" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Iban" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aHf-So-B2e">
+                        <rect key="frame" x="16" y="57.5" width="343" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Balance" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KfR-oa-cYc">
+                        <rect key="frame" x="298" y="11" width="61" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="aHf-So-B2e" firstAttribute="trailing" secondItem="a01-CT-euG" secondAttribute="trailingMargin" id="0gV-WR-gMx"/>
+                    <constraint firstItem="KfR-oa-cYc" firstAttribute="trailing" secondItem="a01-CT-euG" secondAttribute="trailingMargin" id="ABa-i9-3AM"/>
+                    <constraint firstItem="zpR-bR-veM" firstAttribute="top" secondItem="a01-CT-euG" secondAttribute="topMargin" id="DRq-lW-GvT"/>
+                    <constraint firstItem="aHf-So-B2e" firstAttribute="bottom" secondItem="a01-CT-euG" secondAttribute="bottomMargin" id="JWY-Tn-CxT"/>
+                    <constraint firstItem="zpR-bR-veM" firstAttribute="leading" secondItem="a01-CT-euG" secondAttribute="leadingMargin" id="k1J-Zs-IEt"/>
+                    <constraint firstItem="aHf-So-B2e" firstAttribute="leading" secondItem="a01-CT-euG" secondAttribute="leadingMargin" id="qKv-BU-VYc"/>
+                    <constraint firstItem="KfR-oa-cYc" firstAttribute="top" secondItem="a01-CT-euG" secondAttribute="topMargin" id="tBN-XD-fdi"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="accountName" destination="zpR-bR-veM" id="GwL-hj-U8B"/>
+                <outlet property="balance" destination="KfR-oa-cYc" id="Yt4-19-8Rw"/>
+                <outlet property="iban" destination="aHf-So-B2e" id="lhm-RW-Xd4"/>
+            </connections>
+            <point key="canvasLocation" x="148" y="-352.17391304347831"/>
+        </tableViewCell>
+    </objects>
+</document>
